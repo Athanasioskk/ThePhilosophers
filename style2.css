@@ -1,0 +1,1079 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+::-webkit-scrollbar {
+    height: 8px;
+    width: 4px;
+    background: gray;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background: #000;
+    border-radius: 0;
+}
+
+@media (orientation: landscape) {
+    .portrait {display: none;}
+}
+
+* {
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 660vw;
+    height: 100vh;
+}
+
+
+.portrait {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 1000;
+}
+
+.thecolumn {
+    display: flexbox;
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    top: 20%;
+    left: 0%;
+    text-align: center;
+    color: rgb(77, 77, 77);
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+    box-shadow: 0px 10px 10px 0px rgb(77, 77, 77);
+}
+
+ h1 {
+    width: 100%;
+    top:20vh;
+    position: relative;
+    display: flexbox;
+    text-align: center;
+    color: rgb(77, 77, 77);
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+    font-size: 2vmax;
+    box-shadow: 0px 8px 8px 0px rgb(134, 134, 134);
+}
+
+.thecolumn img {
+    width: 30%;
+    height: 100%;
+}
+
+.meander1 {
+    top: 2vh;
+    background-image: url(meander.jpg);
+    position: fixed;
+    width: 3000vw;
+    left: 0;
+    height: 4vh;
+    background-size: contain;
+    opacity: 0;
+    animation: unblur 1s ease forwards;
+    animation-delay: .5s;
+}
+
+.meander2 {
+    left: 0;
+    position: fixed;
+    bottom: 3vh;
+    width: 3000vw;
+    height: 6vh;
+    z-index: 102;
+    background-color: white;
+}
+
+.pseudopadding {
+    background-image: url(meander.jpg);
+    position: fixed;
+    width: 3000vw;
+    height: 6vh;
+    background-size: contain;
+    z-index: 101;
+    opacity: 0;
+    animation: unblur 1s ease forwards;
+    animation-delay: .5s;
+    z-index: 102;
+}
+
+@keyframes unblur {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+
+
+
+
+.dotscontainer {
+    display: flexbox;
+    position: absolute;
+    height: 2vh;
+    width: 660vw;
+    left: 100vw;
+    top: 18vh;
+}
+
+.pdot {
+    display: flexbox;
+    position: absolute;
+    top: 20%;
+    left: 40vw;
+}
+
+.adot {
+    display: flexbox;
+    position: absolute;
+    top: 20%;
+    left: 120vw;
+}
+
+.edot {
+    display: flexbox;
+    position: absolute;
+    top: 20%;
+    left: 230vw;
+}
+
+.zdot {
+    display: flexbox;
+    position: absolute;
+    top: 20%;
+    left: 316vw;
+}
+
+.mdot {
+    display: flexbox;
+    position: absolute;
+    top: 20%;
+    left: 496vw;
+}
+
+.tdot {
+    display: flexbox;
+    position: absolute;
+    top: 20%;
+    left: 640vw;
+}
+
+
+
+
+
+.datescontainer {
+    display: flexbox;
+    position: absolute;
+    height: 4vh;
+    width: 660vw;
+    left: 100vw;
+    top: 14vh;
+    font-family: 'Cinzel', serif;
+    font-size: 1vmax;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(80, 80, 80);
+
+}
+
+.pdate {
+    display: flexbox;
+    position: absolute;
+    top: 20%;
+    left: 38.5vw;
+}
+
+.adate {
+    display: flexbox;
+    position: absolute;
+    top: 20%;
+    left: 118.5vw;
+}
+
+.edate {
+    display: flexbox;
+    position: absolute;
+    top: 20%;
+    left: 228.5vw;
+}
+
+.zdate {
+    display: flexbox;
+    position: absolute;
+    top: 20%;
+    left: 314.5vw;
+}
+
+.mdate {
+    display: flexbox;
+    position: absolute;
+    top: 20%;
+    left: 494.5vw;
+}
+
+.today {
+    display: flexbox;
+    position: absolute;
+    top: 20%;
+    left: 639vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.timeline {
+    position: fixed;
+    width: 100vw;
+    height: 20vh;
+    z-index: -1;
+    box-shadow: 0px 8px 8px 0px rgb(134, 134, 134);
+}
+
+
+.titlecontainer {
+    position: absolute;
+    width: 55vw;
+    height: 5vh;
+    top: 15.1%;
+    left: 20vw;
+    animation: title ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    opacity: 0;
+}
+
+.title {
+    text-align: center;
+    font-size: 2vmax;
+    font-family: 'Cinzel', serif;
+    font-weight: 200;
+    color: rgb(77, 77, 77);
+    text-transform: uppercase;
+    letter-spacing: 1vw;
+}
+
+@keyframes title {
+    0% {
+        left: 20vw;
+        opacity: 0;
+    }
+
+    100% {
+        left: 23.5vw;
+        opacity: 1;
+    }
+}
+
+
+.introcontainer {
+    display: flexbox;
+    position: absolute;
+    top: 20vh;
+    left: 17.5vw;
+    width: 65vw;
+    height: 50vh;
+    box-shadow: 0px 9px 9px -10px rgb(134, 134, 134);
+}
+
+
+.itemscontainer {
+    display: flexbox;
+}
+
+.column1 {
+    float: left;
+    width: 8vw;
+    height: 50vh;
+}
+
+.column2 {
+    float: right;
+    width: 8vw;
+    height: 50vh;
+}
+
+.column1 img {
+    height: 50vh;
+    width: 100%;
+}
+
+.column2 img {
+    height: 50vh;
+    width: 100%;
+    transform: scale(-1, 1);
+}
+
+
+
+
+
+
+
+
+
+
+.intro {
+    position: absolute;
+    width: 35vw;
+    height: 35vh;
+    top: 30vh;
+    left: 33%;
+    animation: intro ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    opacity: 0;
+}
+
+.introparagraph {
+    width: fit-content;
+    text-align: center;
+    font-size: 1.7vmax;
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+    color: rgb(77, 77, 77);
+    letter-spacing: 2px;
+}
+
+@keyframes intro {
+    0% {
+        top: 22vh;
+        opacity: 0;
+    }
+
+    100% {
+        top: 30vh;
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.column3 {
+    display: flexbox;
+    position: absolute;
+    height: 100vh;
+    width: 15vw;
+    left: 100%;
+    z-index: 100;
+}
+
+.column3 img {
+    height: 100%;
+    width: 100%;
+}
+
+.column4 {
+    display: flexbox;
+    position: absolute;
+    height: 100vh;
+    width: 15vw;
+    left: 650vw;
+    z-index: 100;
+}
+
+.column4 img {
+    height: 100%;
+    width: 100%;
+}
+
+.column5 {
+    display: flexbox;
+    position: absolute;
+    height: 100vh;
+    width: 15vw;
+    left: 670vw;
+    z-index: 100;
+}
+
+.column5 img {
+    height: 100%;
+    width: 100%;
+}
+
+.column6 {
+    display: flexbox;
+    position: absolute;
+    height: 100vh;
+    width: 15vw;
+    left: 850vw;
+    z-index: 100;
+}
+
+.column6 img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+.philosopherscontainer {
+    display: flexbox;
+    position: absolute;
+    height: 50vh;
+    width: 660vw;
+    left: 100vw;
+    top: 20vh;
+}
+
+.platocontainer {
+    display: flexbox;
+    position: absolute;
+    height: 50vh;
+    width: 55vw;
+    top: 0vh;
+    left: 20vw;
+}
+
+.plato {
+    display: flexbox;
+    position: absolute;
+    height: 41vh;
+    width: 28vw;
+    top: 10vh;
+    opacity: 0;
+}
+
+@keyframes pentry {
+    0% {
+        opacity: 0;
+        top: 0vh;
+    }
+
+    100% {
+        opacity: 1;
+        top: 10vh;
+    }
+}
+
+
+.platoimg {
+    display: flexbox;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.platoimg img {
+    width: 100%;
+    height: 100%;
+    transform: scale(-1, 1);
+}
+
+.platoquote {
+    display: flexbox;
+    position: absolute;
+    height: 15vh;
+    width: 20vw;
+    top: 7vh;
+    left: 17vw;
+    font-size: 1vmax;
+    text-align: right;
+    font-family: 'Rokkitt', serif;
+    font-weight: 200;
+    color: rgb(77, 77, 77);
+    opacity: 0;
+}
+
+@keyframes pquote {
+    0% {
+        opacity: 0;
+        top: 0vh;
+    }
+
+    100% {
+        opacity: 1;
+        top: 7vh;
+    }
+}
+
+
+.platobio {
+    display: flexbox;
+    position: absolute;
+    height: 25vh;
+    width: 13vw;
+    font-size: 1vmax;
+    text-align: justify;
+    top: 25vh;
+    left: 27vw;
+    font-family: 'Rajdhani', sans-serif;
+    color: rgb(77, 77, 77);
+    opacity: 0;
+}
+
+@keyframes pbio {
+    0% {
+        opacity: 0;
+        left: 35vw;
+    }
+
+    100% {
+        opacity: 1;
+        left: 27vw;
+    }
+}
+
+.aristotlecontainer {
+    display: flexbox;
+    position: absolute;
+    height: 50vh;
+    width: 55vw;
+    top: 0vh;
+    left: 100vw;
+}
+
+.aristotle {
+    display: flexbox;
+    position: absolute;
+    height: 41vh;
+    width: 28vw;
+    top: 10vh;
+    opacity: 0;
+}
+
+@keyframes aentry {
+    0% {
+        opacity: 0;
+        top: 0vh;
+    }
+
+    100% {
+        opacity: 1;
+        top: 10vh;
+    }
+}
+
+
+.aristotleimg {
+    display: flexbox;
+    position: absolute;
+    height: 41vh;
+    width: 19vw;
+}
+
+.aristotleimg img {
+    height: 100%;
+    width: 100%;
+}
+
+.aristotlequote {
+    display: flexbox;
+    position: absolute;
+    height: 15vh;
+    width: 19vw;
+    top: 7vh;
+    left: 16vw;
+    font-size: 1vmax;
+    text-align: right;
+    font-family: 'Rokkitt', serif;
+    font-weight: 200;
+    color: rgb(77, 77, 77);
+    opacity: 0;
+}
+
+@keyframes aquote {
+    0% {
+        opacity: 0;
+        top: 0vh;
+    }
+
+    100% {
+        opacity: 1;
+        top: 7vh;
+    }
+}
+
+
+.aristotlebio {
+    display: flexbox;
+    position: absolute;
+    height: 25vh;
+    width: 13vw;
+    font-size: 1vmax;
+    text-align: justify;
+    top: 28vh;
+    left: 22vw;
+    font-family: 'Rajdhani', sans-serif;
+    color: rgb(77, 77, 77);
+    opacity: 0;
+}
+
+@keyframes abio {
+    0% {
+        opacity: 0;
+        left: 30vw;
+    }
+
+    100% {
+        opacity: 1;
+        left: 22vw;
+    }
+}
+
+
+.epicuruscontainer {
+    display: flexbox;
+    position: absolute;
+    height: 50vh;
+    width: 55vw;
+    top: 0vh;
+    left: 210vw;
+}
+
+.epicurus {
+    display: flexbox;
+    position: absolute;
+    height: 41vh;
+    width: 28vw;
+    top: 9vh;
+    opacity: 0;
+}
+
+@keyframes eentry {
+    0% {
+        opacity: 0;
+        top: 0vh;
+    }
+
+    100% {
+        opacity: 1;
+        top: 10vh;
+    }
+}
+
+
+.epicurusimg {
+    display: flexbox;
+    position: absolute;
+    height: 41vh;
+    width: 19vw;
+}
+
+.epicurusimg img {
+    height: 100%;
+    width: 100%;
+}
+
+.epicurusquote {
+    display: flexbox;
+    position: absolute;
+    height: 15vh;
+    width: 20vw;
+    top: 7vh;
+    left: 16vw;
+    font-size: 1vmax;
+    text-align: right;
+    font-family: 'Rokkitt', serif;
+    font-weight: 200;
+    color: rgb(77, 77, 77);
+    opacity: 0;
+}
+
+@keyframes equote {
+    0% {
+        opacity: 0;
+        top: 0vh;
+    }
+
+    100% {
+        opacity: 1;
+        top: 7vh;
+    }
+}
+
+
+.epicurusbio {
+    display: flexbox;
+    position: absolute;
+    height: 25vh;
+    width: 17vw;
+    font-size: 1vmax;
+    text-align: justify;
+    top: 28vh;
+    left: 22vw;
+    font-family: 'Rajdhani', sans-serif;
+    color: rgb(77, 77, 77);
+    opacity: 0;
+}
+
+@keyframes ebio {
+    0% {
+        opacity: 0;
+        left: 30vw;
+    }
+
+    100% {
+        opacity: 1;
+        left: 22vw;
+    }
+}
+
+
+.zenocontainer {
+    display: flexbox;
+    position: absolute;
+    height: 50vh;
+    width: 55vw;
+    top: 0vh;
+    left: 300vw;
+}
+
+.zeno {
+    display: flexbox;
+    position: absolute;
+    height: 41vh;
+    width: 28vw;
+    top: 9vh;
+    opacity: 0;
+}
+
+@keyframes zentry {
+    0% {
+        opacity: 0;
+        top: 0vh;
+    }
+
+    100% {
+        opacity: 1;
+        top: 10vh;
+    }
+}
+
+
+.zenoimg {
+    display: flexbox;
+    position: absolute;
+    height: 41vh;
+    width: 15vw;
+}
+
+.zenoimg img {
+    height: 100%;
+    width: 100%;
+    transform: scale(-1, 1);
+}
+
+.zenoquote {
+    display: flexbox;
+    position: absolute;
+    height: 15vh;
+    width: 20vw;
+    top: 7vh;
+    left: 14vw;
+    font-size: 1vmax;
+    text-align: right;
+    font-family: 'Rokkitt', serif;
+    font-weight: 200;
+    color: rgb(77, 77, 77);
+    opacity: 0;
+}
+
+@keyframes zquote {
+    0% {
+        opacity: 0;
+        top: 0vh;
+    }
+
+    100% {
+        opacity: 1;
+        top: 7vh;
+    }
+}
+
+
+.zenobio {
+    display: flexbox;
+    position: absolute;
+    height: 25vh;
+    width: 20vw;
+    font-size: 1vmax;
+    text-align: justify;
+    top: 28vh;
+    left: 18vw;
+    font-family: 'Rajdhani', sans-serif;
+    color: rgb(77, 77, 77);
+    opacity: 0;
+}
+
+@keyframes zbio {
+    0% {
+        opacity: 0;
+        left: 27vw;
+    }
+
+    100% {
+        opacity: 1;
+        left: 18vw;
+    }
+}
+
+
+.marcuscontainer {
+    display: flexbox;
+    position: absolute;
+    height: 50vh;
+    width: 55vw;
+    top: 0vh;
+    left: 480vw;
+}
+
+.marcus {
+    display: flexbox;
+    position: absolute;
+    height: 41vh;
+    width: 28vw;
+    top: 9vh;
+    opacity: 0;
+}
+
+@keyframes mentry {
+    0% {
+        opacity: 0;
+        top: 0vh;
+    }
+
+    100% {
+        opacity: 1;
+        top: 10vh;
+    }
+}
+
+
+.marcusimg {
+    display: flexbox;
+    position: absolute;
+    height: 41vh;
+    width: 15vw;
+}
+
+.marcusimg img {
+    height: 100%;
+    width: 100%;
+    transform: scale(-1, 1);
+    filter: grayscale(1);
+}
+
+.marcusquote {
+    display: flexbox;
+    position: absolute;
+    height: 15vh;
+    width: 20vw;
+    top: 7vh;
+    left: 14vw;
+    font-size: 1vmax;
+    text-align: right;
+    font-family: 'Rokkitt', serif;
+    font-weight: 200;
+    color: rgb(77, 77, 77);
+    opacity: 0;
+}
+
+@keyframes mquote {
+    0% {
+        opacity: 0;
+        top: 0vh;
+    }
+
+    100% {
+        opacity: 1;
+        top: 7vh;
+    }
+}
+
+
+.marcusbio {
+    display: flexbox;
+    position: absolute;
+    height: 25vh;
+    width: 22vw;
+    font-size: 1vmax;
+    text-align: justify;
+    top: 28vh;
+    left: 18vw;
+    font-family: 'Rajdhani', sans-serif;
+    color: rgb(77, 77, 77);
+    opacity: 0;
+}
+
+@keyframes mbio {
+    0% {
+        opacity: 0;
+        left: 26vw;
+    }
+
+    100% {
+        opacity: 1;
+        left: 18vw;
+    }
+}
+
+
+.thanasiscontainer {
+    display: flexbox;
+    position: absolute;
+    height: 50vh;
+    width: 40vw;
+    top: 0vh;
+    left: 619.9vw;
+    overflow: hidden;
+}
+
+.thanasis {
+    display: flexbox;
+    position: absolute;
+    height: 41vh;
+    width: 15vw;
+    top: 9vh;
+    left: 22vw;
+    opacity: 0;
+}
+
+@keyframes thanasis {
+    0% {
+        opacity: 0;
+        left: 30vw;
+    }
+
+    100% {
+        opacity: 1;
+        left: 22vw;
+    }
+}
+
+.thanasisimg {
+    display: flexbox;
+    position: absolute;
+    height: 41vh;
+    width: 15vw;
+}
+
+.thanasisimg img {
+    height: 100%;
+    width: 100%;
+    transform: scale(-1, 1);
+    filter: saturate(.8);
+}
+
+.thanasisquote {
+    display: flexbox;
+    position: absolute;
+    height: 25vh;
+    width: 12vw;
+    font-size: 1vmax;
+    text-align: justify;
+    top: 12vh;
+    left: 8vw;
+    font-family: 'Rajdhani', sans-serif;
+    color: rgb(77, 77, 77);
+    opacity: 0;
+}
+
+@keyframes tquote {
+    0% {
+        opacity: 0;
+        left: 16vw;
+    }
+
+    100% {
+        opacity: 1;
+        left: 8vw;
+    }
+}
+
+.contact {
+    display: flexbox;
+    position: absolute;
+    height: 3vh;
+    width: 10vw;
+    top: 33vh;
+    left: 8vw;
+    overflow: visible !important;
+    opacity: 0;
+}
+
+@keyframes contact {
+    0% {
+        opacity: 0;
+        top: 26vh;
+    }
+
+    100% {
+        opacity: 1;
+        top: 33vh;
+    }
+}
+
+.instagram {
+    position: absolute;
+    height: 2vh;
+    width: 1vw;
+    transition: all .3s;
+}
+
+.instagram:hover {
+    transform: scale(1.1);
+}
+
+.email {
+    position: absolute;
+    height: 2vh;
+    width: 1vw;
+    left: 2vw;
+    transition: all .3s;
+}
+
+.email:hover {
+    transform: scale(1.1);
+}
+
+a {
+    color: rgb(78, 78, 78);
+}
+
+.copyright {
+    display: flexbox;
+    position: absolute;
+    top: 95%;
+    left: 20%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: .7vmax;
+    font-weight: 100;
+}
