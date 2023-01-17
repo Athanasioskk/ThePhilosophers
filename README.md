@@ -1,6 +1,8 @@
 # The philosophers
 A minimal educational porpused project regarding five of the most influencial, according to my opinion, philosophers following a timeline with ancient greco-roman aesthetics.
 
+Check-out [here](https://thephilosophers.netlify.app/)
+
 ## The languages being used
 - Javascript
 - HTML5
